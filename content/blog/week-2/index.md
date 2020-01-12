@@ -11,4 +11,4 @@ Things to consider:
 - Branding to help guide how the interface components will be styled
 - Illustrations for onboarding, empty states, etc.
 - An intuitive user experience
-- Motion to help seamless design affordances, etc.
+- Motion for seamless design affordances, etc.
