@@ -1,0 +1,15 @@
+export default {
+  yellow: '#FEC100',
+  red: '#C21600',
+  orange: '#e06c00',
+  green: '#2cb67d',
+  greyDarkest: '#10171f',
+  greyDarker: '#10293c',
+  greyDark: '#4E6275',
+  greyMedium: '#718191',
+  greyLight: '#95A1AC',
+  greyLighter: '#f6f7f8',
+  greyLightest: '#ECEFF1',
+  greyAlt: '#17212c',
+  white: '#ffffff',
+}
