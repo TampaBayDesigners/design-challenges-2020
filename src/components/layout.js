@@ -49,6 +49,8 @@ class Layout extends React.Component {
                 {` `}
                 <a style={{
                   textDecoration: `none`,
+                  borderBottom: `1px solid`,
+                  paddingBottom: `4px`,
                   color: `inherit`,
                 }}
                 href="https://www.gatsbyjs.org">
