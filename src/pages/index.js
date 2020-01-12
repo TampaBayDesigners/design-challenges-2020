@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import { Badge, BadgeOrange, BadgeSuccess } from "../components/Badge"
+import { Card } from "../components/Card"
 
 class BlogIndex extends React.Component {
   render() {
@@ -19,35 +20,35 @@ class BlogIndex extends React.Component {
           return (
             <Link style={{ boxShadow: `none`, color: `inherit`, textDecoration: `none` }} to={node.fields.slug}>
               <article key={node.fields.slug} style={{
-                border: `1px solid`,
-                padding: `2.4rem`,
-                borderRadius: `0.8rem`,
-                marginBottom: `1.6rem`
+                padding: `0`,
+                margin: `0`
               }}>
-                <header
-                  style={{
-                    display: `flex`,
-                    alignItems: `center`,
-                    justifyContent: `space-between`,
-                    marginBottom: `1.6rem`,
-                  }}
-                >
-                  <h3
+                <Card>
+                  <header
                     style={{
-                      marginBottom: rhythm(1 / 4),
+                      display: `flex`,
+                      alignItems: `center`,
+                      justifyContent: `space-between`,
+                      marginBottom: `1.6rem`,
                     }}
                   >
-                    {title}
-                  </h3>
-                  <Badge>{node.frontmatter.date}</Badge>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description || node.excerpt,
-                    }}
-                  />
-                </section>
+                    <h3
+                      style={{
+                        marginBottom: rhythm(1 / 4),
+                      }}
+                    >
+                      {title}
+                    </h3>
+                    <Badge>{node.frontmatter.date}</Badge>
+                  </header>
+                  <section>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: node.frontmatter.description || node.excerpt,
+                      }}
+                    />
+                  </section>
+                </Card>
               </article>
             </Link>
           )
