@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import { Badge, BadgeOrange, BadgeSuccess } from "../components/Badge"
-import { Card } from "../components/Card"
+import { CardHover } from "../components/Card"
 
 class BlogIndex extends React.Component {
   render() {
@@ -23,7 +23,7 @@ class BlogIndex extends React.Component {
                 padding: `0`,
                 margin: `0`
               }}>
-                <Card>
+                <CardHover>
                   <header
                     style={{
                       display: `flex`,
@@ -48,7 +48,7 @@ class BlogIndex extends React.Component {
                       }}
                     />
                   </section>
-                </Card>
+                </CardHover>
               </article>
             </Link>
           )
