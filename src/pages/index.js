@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import { Badge, BadgeOrange, BadgeSuccess } from "../components/Badge"
 
 class BlogIndex extends React.Component {
   render() {
@@ -23,7 +24,14 @@ class BlogIndex extends React.Component {
                 borderRadius: `0.8rem`,
                 marginBottom: `1.6rem`
               }}>
-                <header>
+                <header
+                  style={{
+                    display: `flex`,
+                    alignItems: `center`,
+                    justifyContent: `space-between`,
+                    marginBottom: `1.6rem`,
+                  }}
+                >
                   <h3
                     style={{
                       marginBottom: rhythm(1 / 4),
@@ -31,7 +39,7 @@ class BlogIndex extends React.Component {
                   >
                     {title}
                   </h3>
-                  <small>{node.frontmatter.date}</small>
+                  <Badge>{node.frontmatter.date}</Badge>
                 </header>
                 <section>
                   <p

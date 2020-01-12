@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import theme from "../theme"
 import styled from 'styled-components';
+import { Badge, BadgeOrange, BadgeSuccess } from "../components/Badge"
 
 const Card = styled.article`
   display: block;
@@ -28,17 +29,25 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         <Card>
-          <header>
-            <Link to={`/`} style={{
-              color: `inherit`,
-              textDecoration: `none`,
-            }}>
+          <Link to={`/`} style={{
+            textDecoration: `none`,
+            borderBottom: `1px solid`,
+            paddingBottom: `4px`,
+            color: theme.orange,
+          }}>
               Home
-            </Link>
+          </Link>
+          <header style={{
+            display: `flex`,
+            alignItems: `center`,
+            justifyContent: `space-between`,
+            marginBottom: `3.2rem`,
+            marginTop: `1.6rem`,
+          }}>
             <h1
               style={{
-                marginTop: rhythm(1),
-                marginBottom: 0,
+                marginTop: `0`,
+                marginBottom: `0`,
               }}
             >
               {post.frontmatter.title}
@@ -46,10 +55,11 @@ class BlogPostTemplate extends React.Component {
             <p
               style={{
                 display: `block`,
-                marginBottom: rhythm(1),
               }}
             >
-              {post.frontmatter.date}
+              <BadgeOrange>
+                {post.frontmatter.date}
+              </BadgeOrange>
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -67,20 +77,32 @@ class BlogPostTemplate extends React.Component {
               flexWrap: `wrap`,
               justifyContent: `space-between`,
               listStyle: `none`,
-              padding: 0,
+              padding: `1.6rem 0.8rem`,
             }}
           >
             <li>
               {previous && (
-                <Link to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
+                <Link to={previous.fields.slug} rel="prev"
+                style={{
+                  textDecoration: `none`,
+                  borderBottom: `1px solid`,
+                  paddingBottom: `4px`,
+                  color: `inherit`,
+                }}>
+                  ← Previous Challenge
                 </Link>
               )}
             </li>
             <li>
               {next && (
-                <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
+                <Link to={next.fields.slug} rel="next"
+                style={{
+                  textDecoration: `none`,
+                  borderBottom: `1px solid`,
+                  paddingBottom: `4px`,
+                  color: `inherit`,
+                }}>
+                  Next Challenge →
                 </Link>
               )}
             </li>

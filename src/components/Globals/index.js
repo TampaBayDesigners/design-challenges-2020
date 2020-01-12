@@ -5,6 +5,7 @@ const Globals = createGlobalStyle`
   html {
     font-size: 62.5%;
     box-sizing: border-box;
+    overflow-y: auto;
   }
 
   *, *:before, *:after {

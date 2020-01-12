@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 
 const HeaderContainer = styled.div`
   text-align: center;
-  padding: 10vh 1.6rem 3.2rem;
+  padding: 10vh 1.6rem 4.8rem;
 `;
 
 const Title = styled.h1`
