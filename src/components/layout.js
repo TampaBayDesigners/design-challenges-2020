@@ -38,7 +38,7 @@ class Layout extends React.Component {
             </header>
             <main>{children}</main>
             <footer style={{
-              marginTop: `3.2rem`,
+              marginTop: `4.8rem`,
               display: `flex`,
               flexDirection: `column`,
               alignItems: `center`,

@@ -9,3 +9,11 @@ export const Card = styled.article`
   background: ${props => (props.theme === 'light' ? theme.white : theme.greyAlt)};
   margin-bottom: 1.6rem;
 `;
+
+export const CardHover = styled(Card)`
+  transition: all 200ms ease-out 0s;
+  &:hover {
+    background: ${theme.orange};
+    color: ${theme.white};
+  }
+`;
