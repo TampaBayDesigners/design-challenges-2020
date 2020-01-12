@@ -13,14 +13,16 @@ const SlackLink = styled.a`
   align-items: center;
   text-decoration: none;
   color: inherit;
-  background: white;
   border-radius: 0.8rem;
   padding: 1.6rem;
   margin-top: 1.6rem;
   box-shadow: inset 0px -0.25px 0.5px rgba(0, 0, 0, 0.08), inset 0px 0.25px 0.5px rgba(255, 255, 255, 0.16), 0px 1.5px 2px rgba(0, 0, 0, 0.08), 0px 4px 6px rgba(0, 0, 0, 0.12);
+  color: rgba(255,255,255,1);
+  background: #611f69;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.12);
   transition: all 120ms ease-out 0s;
   &:hover {
-    background: rgba(255,255,255, 0.9);
+    background: rgba(0,0,0, 1);
   }
   &:focus, &:active {
     box-shadow: 0px 0px 0px 0.4rem rgba(255,255,255,0.2);
@@ -30,7 +32,7 @@ const SlackLink = styled.a`
 
 const SlackLinkContent = styled.span`
   padding-left: 1.6rem;
-  color: rgba(0,0,0,1);
+  color: inherit;
   font-weight: 900;
 `;
 

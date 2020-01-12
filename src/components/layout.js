@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import Header from './Header';
 import HeaderSmall from './HeaderSmall';
 import Globals from './Globals';
+//import ThemeButton from './ThemeButton';
 import Bio from './bio';
 import { ThemeProvider } from "styled-components";
 import { rhythm } from "../utils/typography"
@@ -40,6 +41,7 @@ class Layout extends React.Component {
             <header>
               {header}
             </header>
+    
             <main>{children}</main>
             <footer style={{
               marginTop: `4.8rem`,
