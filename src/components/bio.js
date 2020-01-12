@@ -51,9 +51,6 @@ const Bio = () => {
           borderRadius: `16px`,
         }}
       />
-      <span>
-        By <strong>{author}</strong>
-      </span>
     </div>
   )
 }

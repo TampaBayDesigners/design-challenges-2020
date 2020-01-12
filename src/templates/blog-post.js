@@ -5,9 +5,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import theme from "../theme"
-import styled from 'styled-components';
 import { Badge, BadgeOrange, BadgeSuccess } from "../components/Badge"
-import { Card } from "../components/Card"
+import { Card, CardHeader } from "../components/Card"
+import { SlackButton } from "../components/SlackButton"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -30,17 +30,11 @@ class BlogPostTemplate extends React.Component {
           }}>
               All Challenges
           </Link>
-          <header style={{
-            display: `flex`,
-            alignItems: `center`,
-            justifyContent: `space-between`,
-            marginBottom: `3.2rem`,
-            marginTop: `1.6rem`,
-          }}>
+          <CardHeader>
             <h1
               style={{
                 marginTop: `0`,
-                marginBottom: `0`,
+                marginBottom: `1.6rem`,
               }}
             >
               {post.frontmatter.title}
@@ -54,13 +48,14 @@ class BlogPostTemplate extends React.Component {
                 {post.frontmatter.date}
               </BadgeOrange>
             </p>
-          </header>
+          </CardHeader>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr
             style={{
               marginBottom: rhythm(1),
             }}
           />
+          <SlackButton />
         </Card>
 
         <nav>
