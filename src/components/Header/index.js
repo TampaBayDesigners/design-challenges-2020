@@ -7,6 +7,9 @@ import { Link } from "gatsby"
 const HeaderContainer = styled.div`
   text-align: center;
   padding: 10vh 1.6rem 4.8rem;
+  @media screen and (max-width: 768px) {
+    padding-top: 4.8rem;
+  }
 `;
 
 const Title = styled.h1`

@@ -7,14 +7,7 @@ import { rhythm, scale } from "../utils/typography"
 import theme from "../theme"
 import styled from 'styled-components';
 import { Badge, BadgeOrange, BadgeSuccess } from "../components/Badge"
-
-const Card = styled.article`
-  display: block;
-  width: 100%;
-  padding: 3.2rem;
-  border-radius: 0.8rem;
-  background: ${props => (props.theme === 'light' ? theme.white : theme.greyAlt)};
-`;
+import { Card } from "../components/Card"
 
 class BlogPostTemplate extends React.Component {
   render() {
