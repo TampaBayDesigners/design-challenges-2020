@@ -28,7 +28,7 @@ class BlogPostTemplate extends React.Component {
             paddingBottom: `4px`,
             color: theme.orange,
           }}>
-              Home
+              All Challenges
           </Link>
           <header style={{
             display: `flex`,
