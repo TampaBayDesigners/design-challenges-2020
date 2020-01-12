@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 //import { Link } from "gatsby"
 import Header from './Header';
+import HeaderSmall from './HeaderSmall';
 import Globals from './Globals';
 import Bio from './bio';
 import { ThemeProvider } from "styled-components";
@@ -14,9 +15,13 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
     let header
     if (location.pathname === rootPath) {
-      
+      header = (
+        <Header />
+      )
     } else {
-      
+      header = (
+        <HeaderSmall />
+      )
     }
 
     return (
@@ -33,7 +38,6 @@ class Layout extends React.Component {
           >
             
             <header>
-              <Header />
               {header}
             </header>
             <main>{children}</main>
