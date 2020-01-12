@@ -17,3 +17,15 @@ export const CardHover = styled(Card)`
     color: ${theme.white};
   }
 `;
+
+export const CardHeader = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.2rem;
+  margin-top: 1.6rem;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+`;
