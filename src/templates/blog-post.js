@@ -77,7 +77,7 @@ class BlogPostTemplate extends React.Component {
                   paddingBottom: `4px`,
                   color: `inherit`,
                 }}>
-                  ← Previous Challenge
+                  ← Previous
                 </Link>
               )}
             </li>
@@ -90,7 +90,7 @@ class BlogPostTemplate extends React.Component {
                   paddingBottom: `4px`,
                   color: `inherit`,
                 }}>
-                  Next Challenge →
+                  Next →
                 </Link>
               )}
             </li>
