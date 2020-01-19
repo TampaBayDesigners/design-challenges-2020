@@ -9,6 +9,6 @@ description: "On/Off Switch"
 Toggle switches are digital on/off switches. They prompt users to choose between two mutually exclusive options and always have a default value. Toggles should provide immediate results, giving users the freedom to control their preferences as needed.
 
 Things to consider:
-- Should the switch have state descriptors
+- Should the switch have state descriptors?
 - Which colors, if at all, should depict the state of the swtich?
 - How should the switch describe what is being toggled?
