@@ -7,7 +7,7 @@ While the Daily UI challenges are great for leveling up some visual/interaction 
 [Join the fun on Slack](https://join.slack.com/t/tampabaydesigners/shared_invite/enQtNjkxOTYxMjM2ODU1LWQzNWYyZDhmZWRkNjBlYTdkZGZmMjZiZTU4NTMzMDkxYTFkNmU0ZjEzZjgyYjRkOWQ1YmEzYWIxNjIyMGU5ODU)
 
 ### Rules
-- Doesn’t HAVE to be an interactive prototype, but would be great to have all 100 be interactive, even if it’s basic.
+- Doesn’t have to be an interactive prototype, but could be cool, even if it’s basic.
 - Spice it up every now and then, use animation to show off some sick little IxD.
 - Make it weird, make it pretty, make it useful, make it however you'd like
 - SHARE your work, even if it's not pretty, or functional, or...
