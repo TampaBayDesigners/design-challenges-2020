@@ -16,7 +16,8 @@ Use these challenges to set goals, learn something new, flex some muscles that h
 - SHARE your work, even if it's not pretty, or functional, or...
 
 ### Challenges
-- Week 5: Login Form
+- Week 6: 404 Page
+- ~Week 5: Login Form~
 - ~Week 4: App Icon~
 - ~Week 3: On/Off Toggles~
 - ~Week 2: Restaurant Interface~
