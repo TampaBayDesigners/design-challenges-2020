@@ -105,6 +105,14 @@ const Globals = createGlobalStyle`
     font-size: 1.4rem;
     font-weight: 400;
   }
+
+  blockquote {
+    background: rgba(0,0,0,.2);
+    padding: 16px;
+    margin: 1.6rem 0 0;
+    border-radius: 12px;
+    color: #95A1AC;
+  }
 `;
 
 export default Globals;
