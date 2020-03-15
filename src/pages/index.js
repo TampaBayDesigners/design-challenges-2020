@@ -29,7 +29,13 @@ class BlogIndex extends React.Component {
                 </h5>
               </Col>
               <Col>
-                <a style={{ boxShadow: `none`, color: `inherit`, textDecoration: `none` }} rel="noopener noreferrer" target="_blank" href={event.link}>
+                <a style={{
+                  boxShadow: `none`,
+                  color: `inherit`,
+                  textDecoration: `none`,
+                  display: 'block',
+                  marginBottom: '80px'
+                }} rel="noopener noreferrer" target="_blank" href={event.link}>
                   <EventItem event={event} />
                 </a>
               </Col>

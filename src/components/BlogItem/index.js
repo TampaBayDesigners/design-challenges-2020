@@ -8,8 +8,7 @@ const BlogImg = styled.div`
   height: 21.6rem;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: ${theme.blue};
-  filter: grayscale(0.7);
+  background-color: ${theme.grayDarkest};
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +50,7 @@ const BlogContainer = styled(CardHover)`
   &:hover, &:focus {
     ${BlogImg} {
       transform: scale(1.05) rotate(-3deg);
-      filter: grayscale(0);
+      background: ${theme.blue};
     }
   }
   @media screen and (max-width: 769px) {

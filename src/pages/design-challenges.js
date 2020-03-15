@@ -14,7 +14,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All challenges" />
+        <SEO title="Design challenges" />
         <Section>
           <Wrapper>
             <Grid>
@@ -25,9 +25,16 @@ class BlogIndex extends React.Component {
                   <span style={{
                   color: theme.orange,
                   }}>
-                    Design Challenges
+                   Challenges
                   </span>
                 </h5>
+                <h3>All Design Challenges</h3>
+                <p>
+                  While the Daily UI challenges are great for leveling up some visual/interaction design skills, it could be tedious to work through while balancing work, life, etc. So, we decided to break design challenges up into weekly segments.
+                </p>
+                <p style={{ marginBottom: '32px' }}>
+                  Use these challenges to set goals, learn something new, flex some muscles that haven't been used, help beginners get a behind the scenes view of design, or just do them because it may be fun.
+                </p>
               </Col>
               {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug
@@ -39,6 +46,9 @@ class BlogIndex extends React.Component {
                   </Col>
                 )
               })}
+              <div style={{ textAlign: 'center' }}>
+                <Link to={'/'} style={{ color: theme.orange, textDecoration: 'none' }}>Back Home</Link>
+              </div>
             </Grid>
           </Wrapper>
         </Section>
