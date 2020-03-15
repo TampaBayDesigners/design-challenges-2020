@@ -17,7 +17,7 @@ const FooterLink = styled.a`
 const Footer = () => {
   return (
     <FooterContainer>
-      <FooterLink color={theme.pink} target="_blank" href="https://cdpn.io/boomboom/v2/index.html?key=iFrameKey-2504ee9c-8c0b-3fed-35f0-f3534e78100e#">Join us on Slack</FooterLink>
+      <FooterLink color={theme.pink} href="https://cdpn.io/boomboom/v2/index.html?key=iFrameKey-2504ee9c-8c0b-3fed-35f0-f3534e78100e#">Join us on Slack</FooterLink>
       <FooterLink color={theme.blue} target="_blank" href="https://github.com/TampaBayDesigners/design-challenges-2020">Contribute on GitHub</FooterLink>
     </FooterContainer>
   )

@@ -43,8 +43,8 @@ const Header = () => {
               <Subtitle>
                 Learn, share and connect with your fellow designers in the Tampa Bay Area!
               </Subtitle>
-              <SlackButton />
             </HeaderContainer>
+            <SlackButton />
           </Section>
         </ColCentered>
       </Grid>
