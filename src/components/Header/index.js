@@ -1,44 +1,54 @@
 import React from 'react';
-import theme from "../../theme"
-import styled from 'styled-components';
-import Logo from '../Logo';
+import { theme } from "../../theme/theme"
+import styled from 'styled-components'
 import { Link } from "gatsby"
+import { Section, Wrapper, Grid, ColCentered } from '../Grid'
+import { SlackButton } from "../SlackButton"
 
-const HeaderContainer = styled.div`
+const HeaderContainer = styled(Link)`
   text-align: center;
   padding: 10vh 1.6rem 4.8rem;
+  text-decoration: none;
+  color: inherit;
+  padding-top: 14.4rem;
+  padding-bottom: 8rem;
   @media screen and (max-width: 768px) {
-    padding-top: 4.8rem;
+    padding-top: 12rem;
+    padding-bottom: 4.8rem;
   }
 `;
 
 const Title = styled.h1`
-  margin-bottom: 0;
-  margin-top: 16px;
-  font-weight: 900;
+  
 `;
 
-const Subtitle = styled.h4`
-  color: ${theme.orange};
-  margin-bottom: 0;
-  margin-top: 16px;
-  font-weight: 700;
+const Subtitle = styled.p`
+  color: ${theme.grayDark};
+  font-size: 2.3rem;
+  font-weight: 400;
 `;
 
 const Header = () => {
   return (
-    <HeaderContainer>
-      <Link to={`/`} style={{
-        textDecoration: `none`,
-        color: `inherit`,
-      }}>
-        <Logo />
-        <Title>
-          Design Challenges
-        </Title>
-        <Subtitle>Tampa Bay Designers</Subtitle>
-      </Link>
-    </HeaderContainer>
+    <Wrapper>
+      <Grid>
+        <ColCentered width="66.67%">
+          <Section>
+            <HeaderContainer to={`/`}>
+              <Title>
+                Tampa Bay
+                <br />
+                Designers
+              </Title>
+              <Subtitle>
+                Learn, share and connect with your fellow designers in the Tampa Bay Area!
+              </Subtitle>
+              <SlackButton />
+            </HeaderContainer>
+          </Section>
+        </ColCentered>
+      </Grid>
+    </Wrapper>
   )
 }
 

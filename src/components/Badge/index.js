@@ -1,14 +1,12 @@
 import styled from 'styled-components';
-import theme from "../../theme"
+import { theme } from "../../theme/theme"
 
 export const Badge = styled.span`
   display: inline-block;
-  background: transparent;
-  color: inherit;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.2rem;
   border: 1px solid;
-  font-size: 1.4rem;
-  padding: 0.4rem 1.2rem;
-  border-radius: 999px;
+  color: ${(props) => props.color ? props.color : 'currentColor'}
 `;
 
 export const BadgeOrange = styled(Badge)`

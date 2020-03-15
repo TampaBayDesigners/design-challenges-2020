@@ -1,5 +1,5 @@
 import React from 'react';
-import theme from "../../theme"
+import { theme } from "../../theme/theme"
 import styled from 'styled-components';
 
 const LogoLink = styled.div`
@@ -8,7 +8,7 @@ const LogoLink = styled.div`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(45deg, ${theme.red}, ${theme.yellow});
+  background: ${theme.orange};
   border-radius: 20px;
   padding: 4px;
   color: white;

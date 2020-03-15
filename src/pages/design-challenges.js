@@ -5,8 +5,6 @@ import SEO from "../components/seo"
 import { Section, Wrapper, Grid, Col } from "../components/Grid"
 import { theme } from "../theme/theme"
 import BlogItem from '../components/BlogItem'
-import EventItem from '../components/EventItem'
-import event from '../data/events'
 
 class BlogIndex extends React.Component {
   render() {
@@ -21,24 +19,14 @@ class BlogIndex extends React.Component {
           <Wrapper>
             <Grid>
               <Col>
-                <h5 style={{
-                  color: theme.pink,
-                  marginBottom: '32px'
-                }}>
-                  Events
-                </h5>
-              </Col>
-              <Col>
-                <a style={{ boxShadow: `none`, color: `inherit`, textDecoration: `none` }} rel="noopener noreferrer" target="_blank" href={event.link}>
-                  <EventItem event={event} />
-                </a>
-              </Col>
-              <Col>
-                <h5 style={{
+                <h5 style={{ marginBottom: '32px' }}>
+                  <Link style={{ color: 'inherit', textDecoration: 'none' }} to={'/'}>Home</Link>
+                  &nbsp;&nbsp;/&nbsp;&nbsp;
+                  <span style={{
                   color: theme.orange,
-                  marginBottom: '32px'
-                }}>
-                  Design Challenges
+                  }}>
+                    Design Challenges
+                  </span>
                 </h5>
               </Col>
               {posts.map(({ node }) => {
@@ -51,9 +39,6 @@ class BlogIndex extends React.Component {
                   </Col>
                 )
               })}
-              <div style={{ textAlign: 'center' }}>
-                <Link to={'/design-challenges'} style={{ textDecoration: 'none', color: theme.orange }}>View More</Link>
-              </div>
             </Grid>
           </Wrapper>
         </Section>
@@ -74,7 +59,6 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       sort: {
         fields: [frontmatter___date], order: DESC }
-        limit: 4
         ) {
       edges {
         node {

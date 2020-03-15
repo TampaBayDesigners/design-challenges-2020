@@ -2,6 +2,7 @@
 title: Week 3
 date: "2020-01-19T00:00:00+00:00"
 description: "On/Off Switch"
+icon: "💡"
 ---
 
 **Design an On/Off switch.**

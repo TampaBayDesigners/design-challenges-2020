@@ -2,6 +2,7 @@
 title: Week 7
 date: "2020-02-16T00:00:00+00:00"
 description: "Business Card"
+icon: "📇"
 ---
 
 **Design Logo/Business Card for a Photographer.**
