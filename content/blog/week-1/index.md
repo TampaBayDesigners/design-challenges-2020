@@ -2,6 +2,7 @@
 title: Week 1
 date: "2020-01-05T00:00:00+00:00"
 description: "NYC Metrocard System"
+icon: "🚆"
 ---
 
 The NYC metrocard system has remained unchanged for decades. The cost of the metrocard machine infrastructure, the lost time of waiting in line to buy a metrocard, touching a dirty machine to do it, the potential of losing the metrocard, and the ease of gaming the system by swiping your card for others has cost the city millions of dollars and leaves much to be desired from the user experience.

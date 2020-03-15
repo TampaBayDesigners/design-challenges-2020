@@ -20,9 +20,9 @@ const SlackLink = styled.a`
   color: rgba(255,255,255,1);
   background: #611f69;
   text-shadow: 0px 1px 2px rgba(0,0,0,0.12);
-  transition: all 120ms ease-out 0s;
+  transition: all 200ms ease-out 0s;
   &:hover {
-    background: rgba(0,0,0, 1);
+    background: rgba(40,40,40, 1);
   }
   &:focus, &:active {
     box-shadow: 0px 0px 0px 0.4rem rgba(255,255,255,0.2);
