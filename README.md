@@ -16,7 +16,9 @@ Use these challenges to set goals, learn something new, flex some muscles that h
 - SHARE your work, even if it's not pretty, or functional, or...
 
 ### Challenges
-- Week 9: App/Website Redesign
+- Week 11: Flight Search
+- ~Week 10: Slack Signup~
+- ~Week 9: App/Website Redesign~
 - ~Week 8: Leaderboard~
 - ~Week 7: Business Card~
 - ~Week 6: 404 Page~
