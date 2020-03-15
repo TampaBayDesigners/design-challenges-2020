@@ -18,12 +18,12 @@ const EventImg = styled.div`
   background-image: url('${(props) => props.image}');
   transition: all 200ms ease-out 0s;
   @media screen and (max-width: 769px) {
-    width: 9.6rem;
-    height: 9.6rem;
+    width: 7.2rem;
+    height: 7.2rem;
     top: -4.8rem;
     right: 3vw;
     position: absolute;
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
 `;
 

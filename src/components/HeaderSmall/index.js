@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import { Section, Wrapper, Grid, ColCentered } from '../Grid'
 
 const HeaderContainer = styled.div`
-  padding: 3.2rem 0 4.8rem;
+  padding: 0;
   text-align: center;
   @media screen and (max-width: 768px) {
     padding-top: 1.6rem;
@@ -29,7 +29,7 @@ const LogoContent = styled.div`
 
 const HeaderSmall = () => {
   return (
-    <Section>
+    <Section style={{ padding: '3.2rem 0 0' }}>
       <Wrapper>
         <Grid>
           <ColCentered>
