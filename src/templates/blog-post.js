@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -9,6 +9,7 @@ import { Badge } from "../components/Badge"
 import { CardStatic, CardHeader } from "../components/Card"
 import { SlackButton } from "../components/SlackButton"
 import { Section, Wrapper, Grid, Col } from "../components/Grid"
+import StyledLink from '../components/StyledLink'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -27,9 +28,9 @@ class BlogPostTemplate extends React.Component {
             <Grid>
               <Col>
                 <h5 style={{ marginBottom: '24px' }}>
-                  <Link style={{ color: 'inherit', textDecoration: 'none' }} to={'/'}>Home</Link>
+                  <StyledLink to={'/'}>Home</StyledLink>
                   &nbsp;&nbsp;/&nbsp;&nbsp;
-                  <Link style={{ color: 'inherit', textDecoration: 'none' }} to={`/design-challenges`}>Challenges</Link>
+                  <StyledLink to={`/design-challenges`}>Challenges</StyledLink>
                   &nbsp;&nbsp;/&nbsp;&nbsp;
                   <span style={{
                   color: theme.orange,
@@ -85,28 +86,16 @@ class BlogPostTemplate extends React.Component {
               >
                 <li style={{ marginBottom: '0' }}>
                   {previous && (
-                    <Link to={previous.fields.slug} rel="prev"
-                    style={{
-                      textDecoration: `none`,
-                      borderBottom: `1px solid`,
-                      paddingBottom: `0`,
-                      color: `inherit`,
-                    }}>
+                    <StyledLink to={previous.fields.slug} rel="prev">
                       ← Previous
-                    </Link>
+                    </StyledLink>
                   )}
                 </li>
                 <li style={{ marginBottom: '0' }}>
                   {next && (
-                    <Link to={next.fields.slug} rel="next"
-                    style={{
-                      textDecoration: `none`,
-                      borderBottom: `1px solid`,
-                      paddingBottom: `0`,
-                      color: `inherit`,
-                    }}>
+                    <StyledLink to={next.fields.slug} rel="next">
                       Next →
-                    </Link>
+                    </StyledLink>
                   )}
                 </li>
               </ul>

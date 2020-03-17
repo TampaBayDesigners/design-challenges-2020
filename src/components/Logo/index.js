@@ -13,6 +13,11 @@ const LogoLink = styled.div`
   padding: 4px;
   color: white;
   box-shadow: inset 0px -0.25px 0.5px rgba(0, 0, 0, 0.08), inset 0px 0.25px 0.5px rgba(255, 255, 255, 0.16), 0px 1.5px 2px rgba(0, 0, 0, 0.08), 0px 4px 6px rgba(0, 0, 0, 0.12);
+  @media screen and (max-width: 769px) {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+  }
 `;
 
 const Logo = () => {

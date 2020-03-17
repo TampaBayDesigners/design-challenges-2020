@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Design Challenges`,
-    author: `Tampa Bay Designers`,
-    description: `Design challenges to help level up your design skills in 2020`,
+    title: `Tampa Bay Designers`,
+    author: `Ryan Parag`,
+    description: `Learn, share and connect with your fellow designers in the Tampa Bay Area!`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `asdf`,
+      twitter: ``,
     },
   },
   plugins: [

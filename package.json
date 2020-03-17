@@ -1,11 +1,11 @@
 {
   "name": "design-challenges-2020",
   "private": true,
-  "description": "Design Challenges for Tampa Bay Designers",
+  "description": "Tampa Bay Designers and Design Challenges for 2020",
   "version": "0.1.0",
   "author": "Ryan Parag <parag.ryan@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/TampaBayDesigners/design-challenges-2020/issues"
   },
   "dependencies": {
     "feather-icons": "^4.25.0",
@@ -33,6 +33,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "react-mailchimp-form": "^1.0.2",
     "react-typography": "^0.16.19",
     "styled-components": "^4.4.1",
     "typeface-merriweather": "0.0.72",
@@ -43,15 +44,15 @@
   "devDependencies": {
     "prettier": "^1.19.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/TampaBayDesigners/design-challenges-2020#readme",
   "keywords": [
-    "gatsby"
+    "daily-ui"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/TampaBayDesigners/design-challenges-2020.git"
   },
   "scripts": {
     "build": "gatsby build",

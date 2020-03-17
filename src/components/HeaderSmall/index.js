@@ -7,6 +7,7 @@ import { Section, Wrapper, Grid, ColCentered } from '../Grid'
 const HeaderContainer = styled.div`
   padding: 0;
   text-align: center;
+  display: block;
   @media screen and (max-width: 768px) {
     padding-top: 1.6rem;
   }
@@ -18,9 +19,18 @@ const Title = styled.h4`
   font-weight: 900;
 `;
 
-const HeaderLogo = styled.div`
+const HeaderLogo = styled(Link)`
   display: inline-flex;
   align-items: center;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 0.8rem;
+  transition: all 200ms ease-out 0s;
+  &:focus, &:hover, &:active {
+    box-shadow: 0px 0px 0px 1.6rem #101010;
+    background: #101010;
+    outline: none;
+  }
 `;
 
 const LogoContent = styled.div`
@@ -34,19 +44,14 @@ const HeaderSmall = () => {
         <Grid>
           <ColCentered>
             <HeaderContainer>
-              <Link to={`/`} style={{
-                textDecoration: `none`,
-                color: `inherit`,
-              }}>
-                <HeaderLogo>
-                  <Logo />
-                  <LogoContent>
-                    <Title>
-                    Tampa Bay Designers
-                    </Title>
-                  </LogoContent>
-                </HeaderLogo>
-              </Link>
+              <HeaderLogo to={`/`}>
+                <Logo />
+                <LogoContent>
+                  <Title>
+                  Tampa Bay Designers
+                  </Title>
+                </LogoContent>
+              </HeaderLogo>
             </HeaderContainer>
           </ColCentered>
         </Grid>

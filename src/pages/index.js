@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Section, Wrapper, Grid, Col } from "../components/Grid"
@@ -7,6 +7,8 @@ import { theme } from "../theme/theme"
 import BlogItem from '../components/BlogItem'
 import EventItem from '../components/EventItem'
 import event from '../data/events'
+import SignUpForm from '../components/SignUpForm'
+import StyledLink from '../components/StyledLink'
 
 class BlogIndex extends React.Component {
   render() {
@@ -38,6 +40,7 @@ class BlogIndex extends React.Component {
                 }} rel="noopener noreferrer" target="_blank" href={event.link}>
                   <EventItem event={event} />
                 </a>
+                <SignUpForm />
               </Col>
               <Col>
                 <h5 style={{
@@ -51,14 +54,12 @@ class BlogIndex extends React.Component {
                 const title = node.frontmatter.title || node.fields.slug
                 return (
                   <Col>
-                    <Link style={{ boxShadow: `none`, color: `inherit`, textDecoration: `none` }} to={node.fields.slug}>
-                      <BlogItem icon={node.frontmatter.icon} date={node.frontmatter.date}  title={title} name={node.frontmatter.description} />
-                    </Link>
+                    <BlogItem link={node.fields.slug} icon={node.frontmatter.icon} date={node.frontmatter.date}  title={title} name={node.frontmatter.description} />
                   </Col>
                 )
               })}
               <div style={{ textAlign: 'center' }}>
-                <Link to={'/design-challenges'} style={{ textDecoration: 'none', color: theme.orange }}>View More</Link>
+                <StyledLink to={'/design-challenges'} color={theme.orange}>View More</StyledLink>
               </div>
             </Grid>
           </Wrapper>
