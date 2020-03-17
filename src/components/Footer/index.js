@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
 import { theme } from '../../theme/theme'
-import StyledLink from '../StyledLink'
 
 const FooterContainer = styled.footer`
   padding: 32px 0 48px;

@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Section, Wrapper, Grid, Col } from "../components/Grid"
 import { CardStatic } from "../components/Card"
-import { Link } from 'gatsby'
 import { theme } from "../theme/theme"
 import StyledLink from '../components/StyledLink'
 

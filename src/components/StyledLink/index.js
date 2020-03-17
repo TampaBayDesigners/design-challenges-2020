@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { theme } from '../../theme/theme'
 
 const StyledLink = styled(Link)`
   color: ${(props) => props.color ? props.color : 'inherit'};
