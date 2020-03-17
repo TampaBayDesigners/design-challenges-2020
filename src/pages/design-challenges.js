@@ -40,9 +40,7 @@ class BlogIndex extends React.Component {
                 const title = node.frontmatter.title || node.fields.slug
                 return (
                   <Col>
-                    <Link style={{ boxShadow: `none`, color: `inherit`, textDecoration: `none` }} to={node.fields.slug}>
-                      <BlogItem icon={node.frontmatter.icon} date={node.frontmatter.date}  title={title} name={node.frontmatter.description} />
-                    </Link>
+                    <BlogItem link={node.fields.slug} icon={node.frontmatter.icon} date={node.frontmatter.date}  title={title} name={node.frontmatter.description} />
                   </Col>
                 )
               })}

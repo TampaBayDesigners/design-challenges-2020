@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { CardHover } from '../Card'
 import { theme } from '../../theme/theme'
 import { Badge } from '../Badge'
+import { Link } from 'gatsby'
 
 const BlogImg = styled.div`
   width: 21.6rem;
@@ -42,18 +43,19 @@ const BlogTitle = styled.h2`
   color: ${theme.white}
 `;
 
-const BlogDate = styled.h5`
-  color: ${theme.grayDark}
-`;
-
-const BlogContainer = styled(CardHover)`
-  margin-bottom: 5.6rem;
-  &:hover, &:focus {
+const BlogLink = styled(Link)`
+  color: inherit;
+  text-decoration: none;
+  &:hover, &:focus, &:active {
     ${BlogImg} {
       transform: scale(1.05) rotate(-3deg);
       background: ${theme.blue};
     }
   }
+`;
+
+const BlogContainer = styled(CardHover)`
+  margin-bottom: 5.6rem;
   @media screen and (max-width: 769px) {
     flex-direction: column;
   }
@@ -61,16 +63,18 @@ const BlogContainer = styled(CardHover)`
 
 const BlogItem = (props) => {
   return (
-    <BlogContainer>
-      <BlogImg>
-  <span rol="img">{props.icon}</span>
-      </BlogImg>
-      <BlogContent>
-        <BlogName>{props.name}</BlogName>
-        <BlogTitle>{props.title}</BlogTitle>
-        <Badge color={theme.orange} >{props.date}</Badge>
-      </BlogContent>
-    </BlogContainer>
+    <BlogLink to={props.link}>
+      <BlogContainer>
+        <BlogImg>
+    <span rol="img">{props.icon}</span>
+        </BlogImg>
+        <BlogContent>
+          <BlogName>{props.name}</BlogName>
+          <BlogTitle>{props.title}</BlogTitle>
+          <Badge color={theme.orange} >{props.date}</Badge>
+        </BlogContent>
+      </BlogContainer>
+    </BlogLink>
   )
 }
 
