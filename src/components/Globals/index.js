@@ -129,6 +129,55 @@ const Globals = createGlobalStyle`
     border-radius: 12px;
     color: ${theme.grayDark};
   }
+
+  .mc-form {
+    width: 100%:
+    display: block;
+    position: relative;
+    input {
+      display: block;
+      color: ${theme.white};
+      padding: 1.6rem 2rem;
+      border-radius: 0.8rem;
+      border: 1px solid ${theme.grayDarkest};
+      background: #141414;
+      width: 100%;
+      transition: all 200ms ease-out 0s;
+      &:focus, &:active {
+        background: #101010;
+        border-color: ${theme.grayDark};
+      }
+    }
+    button {
+      position: absolute;
+      top: 3.2rem;
+      transform: translateY(-50%);
+      right: 1.2rem;
+      cursor: pointer;
+      border: 1px solid transparent;
+      background: ${theme.pink};
+      padding: 8px 16px;
+      border-radius: 0.8rem;
+      color: ${theme.white};
+      padding: 0.8rem 2.4rem;
+      font-size: 1.4rem;
+      &:focus, &:active {
+        box-shadow: 0px 0px 8px ${theme.pink};
+        border-color: ${theme.white};
+      }
+      @media screen and (max-width: 769px) {
+        position: relative;
+        top: 0;
+        transform: translateY(0%);
+        right: 0;
+        margin-top: 1.6rem;
+        display: block;
+        width: 100%;
+        padding: 1.6rem 2rem;
+        font-size: 1.8rem;
+      }
+    }
+  }
 `;
 
 export default Globals;

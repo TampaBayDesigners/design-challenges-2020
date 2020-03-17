@@ -7,6 +7,7 @@ import { theme } from "../theme/theme"
 import BlogItem from '../components/BlogItem'
 import EventItem from '../components/EventItem'
 import event from '../data/events'
+import SignUpForm from '../components/SignUpForm'
 
 class BlogIndex extends React.Component {
   render() {
@@ -38,6 +39,7 @@ class BlogIndex extends React.Component {
                 }} rel="noopener noreferrer" target="_blank" href={event.link}>
                   <EventItem event={event} />
                 </a>
+                <SignUpForm />
               </Col>
               <Col>
                 <h5 style={{
