@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { CardHover } from '../Card'
 import { theme } from '../../theme/theme'
+import { Badge } from '../Badge'
 
 const BlogImg = styled.div`
   width: 21.6rem;
@@ -67,7 +68,7 @@ const BlogItem = (props) => {
       <BlogContent>
         <BlogName>{props.name}</BlogName>
         <BlogTitle>{props.title}</BlogTitle>
-        <BlogDate>{props.date}</BlogDate>
+        <Badge color={theme.orange} >{props.date}</Badge>
       </BlogContent>
     </BlogContainer>
   )
