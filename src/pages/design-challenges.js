@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import { Section, Wrapper, Grid, Col } from "../components/Grid"
 import { theme } from "../theme/theme"
 import BlogItem from '../components/BlogItem'
+import StyledLink from '../components/StyledLink'
 
 class BlogIndex extends React.Component {
   render() {
@@ -20,7 +21,7 @@ class BlogIndex extends React.Component {
             <Grid>
               <Col>
                 <h5 style={{ marginBottom: '32px' }}>
-                  <Link style={{ color: 'inherit', textDecoration: 'none' }} to={'/'}>Home</Link>
+                  <StyledLink style={{ color: 'inherit', textDecoration: 'none' }} to={'/'}>Home</StyledLink>
                   &nbsp;&nbsp;/&nbsp;&nbsp;
                   <span style={{
                   color: theme.orange,
@@ -45,7 +46,7 @@ class BlogIndex extends React.Component {
                 )
               })}
               <div style={{ textAlign: 'center' }}>
-                <Link to={'/'} style={{ color: theme.orange, textDecoration: 'none' }}>Back Home</Link>
+                <StyledLink to={'/'} color={theme.orange}>Back Home</StyledLink>
               </div>
             </Grid>
           </Wrapper>

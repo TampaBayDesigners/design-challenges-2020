@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import { theme } from '../../theme/theme'
+import StyledLink from '../StyledLink'
 
 const FooterContainer = styled.footer`
   padding: 32px 0 48px;
@@ -11,7 +12,15 @@ const FooterLink = styled.a`
   margin-right: 16px;
   margin-left: 16px;
   text-decoration: none;
-  color: ${(props) => props.color ? props.color : 'currentColor'};
+  color: ${(props) => props.color ? props.color : 'inherit'};
+  border-bottom: 1px solid transparent;
+  padding-bottom: 4px;
+  transition: all 200ms ease-out 0s;
+  &:hover, &:focus, &:active {
+    outline: none;
+    border-color: currentColor;
+    text-shadow: 0px 1px 3px currentColor, 0px 4px 24px currentColor;
+  }
 `
 
 const Footer = () => {

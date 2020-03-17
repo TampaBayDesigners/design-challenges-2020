@@ -8,6 +8,7 @@ import BlogItem from '../components/BlogItem'
 import EventItem from '../components/EventItem'
 import event from '../data/events'
 import SignUpForm from '../components/SignUpForm'
+import StyledLink from '../components/StyledLink'
 
 class BlogIndex extends React.Component {
   render() {
@@ -58,7 +59,7 @@ class BlogIndex extends React.Component {
                 )
               })}
               <div style={{ textAlign: 'center' }}>
-                <Link to={'/design-challenges'} style={{ textDecoration: 'none', color: theme.orange }}>View More</Link>
+                <StyledLink to={'/design-challenges'} color={theme.orange}>View More</StyledLink>
               </div>
             </Grid>
           </Wrapper>

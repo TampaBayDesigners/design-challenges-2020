@@ -7,6 +7,7 @@ import { Section, Wrapper, Grid, Col } from "../components/Grid"
 import { CardStatic } from "../components/Card"
 import { Link } from 'gatsby'
 import { theme } from "../theme/theme"
+import StyledLink from '../components/StyledLink'
 
 class NotFoundPage extends React.Component {
   render() {
@@ -23,7 +24,7 @@ class NotFoundPage extends React.Component {
                 <CardStatic style={{ textAlign: 'center' }}>
                   <h2>Not Found</h2>
                   <p>It seems this page does not exist ... yet</p>
-                  <Link to={'/'} style={{ textDecoration: 'none', color: theme.orange }}>Back Home</Link>
+                  <StyledLink to={'/'} color={theme.orange}>Back Home</StyledLink>
                 </CardStatic>
               </Col>
             </Grid>

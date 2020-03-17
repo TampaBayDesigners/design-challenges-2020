@@ -7,14 +7,19 @@ import { SlackButton } from "../SlackButton"
 
 const HeaderContainer = styled(Link)`
   text-align: center;
-  padding: 10vh 1.6rem 4.8rem;
+  padding: 6rem 1.6rem 1.6rem;
   text-decoration: none;
   color: inherit;
-  padding-top: 14.4rem;
-  padding-bottom: 8rem;
+  display: block;
+  border-radius: 1.6rem;
+  transition: all 200ms ease-out 0s;
   @media screen and (max-width: 768px) {
     padding-top: 12rem;
     padding-bottom: 4.8rem;
+  }
+  &:focus, &:hover, &:active {
+    background: #101010;
+    outline: none;
   }
 `;
 
