@@ -5,6 +5,11 @@ import { theme } from '../../theme/theme'
 const FooterContainer = styled.footer`
   padding: 32px 0 48px;
   text-align: center;
+  @media screen and (max-width: 769px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const FooterLink = styled.a`
@@ -20,6 +25,9 @@ const FooterLink = styled.a`
     border-color: currentColor;
     text-shadow: 0px 1px 3px currentColor, 0px 4px 24px currentColor;
   }
+  @media screen and (max-width: 769px) {
+    margin-bottom: 0.8rem;
+  }
 `
 
 const Footer = () => {
@@ -27,6 +35,7 @@ const Footer = () => {
     <FooterContainer>
       <FooterLink color={theme.pink} href="https://cdpn.io/boomboom/v2/index.html?key=iFrameKey-2504ee9c-8c0b-3fed-35f0-f3534e78100e#">Join us on Slack</FooterLink>
       <FooterLink color={theme.blue} target="_blank" href="https://github.com/TampaBayDesigners/design-challenges-2020">Contribute on GitHub</FooterLink>
+      <FooterLink color={theme.green} href="https://serviceindustry.tips/tpa/" target="_blank">Help the Tampa Service Industry</FooterLink>
     </FooterContainer>
   )
 }
