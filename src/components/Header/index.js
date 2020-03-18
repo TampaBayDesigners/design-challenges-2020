@@ -97,7 +97,7 @@ const Header = () => {
             <ButtonGroup>
               <SlackButton />
               <CTALinkContainer>
-                <CTALink href="https://serviceindustry.tips/tpa/" target="_blank">Help the Tampa Service Industry</CTALink>
+                <CTALink href="https://serviceindustry.tips/tpa/" target="_blank">Help during COVID-19</CTALink>
               </CTALinkContainer>
             </ButtonGroup>
             <CTA>
