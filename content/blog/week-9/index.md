@@ -3,6 +3,7 @@ title: Week 9
 date: "2020-03-01T00:00:00+00:00"
 description: "App/Website Redesign"
 icon: "👩‍💻"
+published: true
 ---
 
 **Redesign an existing App or Website**

@@ -3,6 +3,7 @@ title: Week 8
 date: "2020-02-23T00:00:00+00:00"
 description: "Leaderboard"
 icon: "🏆"
+published: true
 ---
 
 **Design a Leaderboard.**

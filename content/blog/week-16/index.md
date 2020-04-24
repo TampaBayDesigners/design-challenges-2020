@@ -2,7 +2,8 @@
 title: Week 16
 date: "2020-04-19T00:00:00+00:00"
 description: "Ecommerce Item"
-icon: "🛒"
+icon: "🛍"
+published: true
 ---
 
 **Ecommerce Item**

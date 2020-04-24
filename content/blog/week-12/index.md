@@ -3,6 +3,7 @@ title: Week 12
 date: "2020-03-22T00:00:00+00:00"
 description: "Calculator"
 icon: "🧮"
+published: true
 ---
 
 **Calculator**
