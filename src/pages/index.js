@@ -79,6 +79,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
+      filter: { frontmatter: { published: { eq: true } } }
       sort: {
         fields: [frontmatter___date], order: DESC }
         limit: 4

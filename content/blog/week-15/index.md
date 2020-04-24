@@ -3,6 +3,7 @@ title: Week 15
 date: "2020-04-12T00:00:00+00:00"
 description: "User Profile"
 icon: "👩‍💼"
+published: true
 ---
 
 **User Profile**

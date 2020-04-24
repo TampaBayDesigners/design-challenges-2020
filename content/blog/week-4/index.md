@@ -3,6 +3,7 @@ title: Week 4
 date: "2020-01-26T00:00:00+00:00"
 description: "App Icon"
 icon: "📱"
+published: true
 ---
 
 **Design an App Icon.**
