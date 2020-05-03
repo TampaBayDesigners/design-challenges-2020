@@ -2,7 +2,7 @@
 title: Week 10
 date: "2020-03-08T00:00:00+00:00"
 description: "Slack Sign Up"
-icon: "💬"
+icon: "✍️"
 published: true
 ---
 

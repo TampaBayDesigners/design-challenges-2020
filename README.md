@@ -20,8 +20,8 @@ Use these challenges to set goals, learn something new, flex some muscles that h
 - *Week 21: Boarding Pass (upcoming)
 - *Week 20: Pricing (upcoming)
 - *Week 19: Onboarding (upcoming)
-- *Week 18: Shopping Cart (upcoming)
-- Week 17: Music Player
+- Week 18: Messenger
+- ~Week 17: Music Player~
 - ~Week 16: Ecommerce Item~
 - ~Week 15: User Profile~
 - ~Week 14: Food/Drink Menu~
