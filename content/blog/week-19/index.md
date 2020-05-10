@@ -3,7 +3,7 @@ title: Week 19
 date: "2020-05-10T00:00:00+00:00"
 description: "Onboarding"
 icon: "📱"
-published: false
+published: true
 ---
 
 **Onboarding**
