@@ -17,8 +17,8 @@ Use these challenges to set goals, learn something new, flex some muscles that h
 
 ### Challenges
 - *Week 22: Itinerary (upcoming)
-- *Week 21: Boarding Pass (upcoming)
-- Week 20: Pricing
+- Week 21: Boarding Pass
+- ~Week 20: Pricing~
 - ~Week 19: Onboarding~
 - ~Week 18: Messenger~
 - ~Week 17: Music Player~

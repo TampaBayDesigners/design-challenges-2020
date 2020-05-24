@@ -3,7 +3,7 @@ title: Week 21
 date: "2020-05-24T00:00:00+00:00"
 description: "Boarding Pass"
 icon: "🛩"
-published: false
+published: true
 ---
 
 **Boarding Pass**
